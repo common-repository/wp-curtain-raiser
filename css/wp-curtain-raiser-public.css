@@ -1,0 +1,42 @@
+/* Base styles for curtains */
+.leftcurtain, .rightcurtain {
+    width: 50%;
+    height: 750px;
+    top: 0;
+    position: absolute;
+    z-index: 1102;
+}
+
+/* Adjusting the right curtain's width and z-index */
+.rightcurtain {
+    width: 50%; /* Updated to 50% for symmetry */
+    right: 0;
+    z-index: 1103;
+}
+
+/* Styling for the curtain images */
+.rightcurtain img, .leftcurtain img {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Styling for the rope */
+.rope {
+    position: absolute;
+    top: -40px;
+    right: 5%;
+    z-index: 1104;
+    border: none;
+    cursor: pointer; /* Added for better user experience */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .leftcurtain, .rightcurtain {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+    .rope {
+        top: -20px; /* Adjust rope position for smaller screens */
+    }
+}
